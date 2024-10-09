@@ -1,4 +1,5 @@
-const getTheTitles = function() {
+const getTheTitles = function(objArr) {
+   return objArr.filter(obj => obj.hasOwnProperty("title")).map(obj => obj["title"]);
 
 };
 
